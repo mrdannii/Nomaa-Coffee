@@ -1,0 +1,2 @@
+import { MotionProvider, Navbar, HeroSection, CoffeeStorySection, CoffeeCarousel, WhyNomaaSection, LifestyleGallery, LocationsSection, NewsletterSection, Footer } from '@/components/landing';
+export default function Home() { return <MotionProvider><Navbar/><main><HeroSection/><CoffeeStorySection/><CoffeeCarousel/><WhyNomaaSection/><LifestyleGallery/><LocationsSection/><NewsletterSection/></main><Footer/></MotionProvider>; }
