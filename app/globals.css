@@ -9,3 +9,9 @@
 .cup-sprite{aspect-ratio:1/1.724}.hero-cup{bottom:-180px}.hero-cup.center{bottom:-170px}.hero-drinks{margin-top:45px}.orbit-cup{top:95px}.why-visual .cup-sprite{top:18px}.newsletter-cup{top:35px}
 @media(max-width:700px){.hero-drinks{margin-top:28px}.hero-cup.center{bottom:-100px}.hero-cup.left,.hero-cup.right{bottom:-130px}.orbit-cup{top:80px}.why-visual .cup-sprite{top:10px}.newsletter-cup{top:200px}}
 .section-heading h2 span{margin-right:.22em}.section-heading h2 span:last-child{margin-right:0}
+/* The forearm continues beyond the viewport, rather than ending at the content gutter. */
+.story{--story-gutter:max(56px,calc((100vw - 1180px)/2));overflow-x:clip}
+.story-visual{margin-right:calc(-1 * var(--story-gutter))}
+.story-visual img{display:block;width:100%;max-height:none;object-fit:initial}
+@media(max-width:1000px){.story{--story-gutter:32px}}
+@media(max-width:700px){.story{--story-gutter:20px}.story-visual{margin:0 calc(-1 * var(--story-gutter)) 0 20px}}
